@@ -1,15 +1,19 @@
 import random
+import math
 
 # 랜덤으로 정답 생성
-answer = random.sample(range(1, 10), 3)
-print("정답은=", answer)
+# answer = random.sample(range(1,10),4)
+# print("정답은=", answer)
 
 # 초기화
 cnt = 0
 guess = []
 strikecnt = 0
 
-plyaer1Base = 0
+isPlayer1 = True
+isPlayer2 = False
+
+player1Base = 0
 player2Base = 0
 
 tmpPlayer1Ball = 0
